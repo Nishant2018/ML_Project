@@ -1,0 +1,86 @@
+/* style.css */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cf1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    background-color: #c2d212;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 80px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+}
+
+
+.title {
+    font-size: 24px;
+    color: #642828;
+}
+
+form {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    /*margin: 5px 0;*/
+    margin-bottom :15px;;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+    position: relative;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items:center;
+    margin-left: 151px;
+    margin-bottom: 5px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.result-title {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.prediction {
+    font-size: 18px;
+    color: #007BFF;
+}
