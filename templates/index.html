@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Predictor</title>
+    
+    <link rel="stylesheet" href="../static/CSS/static.css">
+    
+    
+
+</head>
+
+<body>
+
+    <img src="./background.jpg" alt="" srcset="">
+    
+    <div class="container">
+        <h1>Machine Learning Predictor</h1>
+        <form method="POST" action="/predict" class="prediction-form">
+            <label for="studytime">Study Time (hours per week):</label>
+            <input type="number" placeholder="Study Time" name="studytime" required>
+
+            <label for="Medu">Mother's Education Level:</label>
+            <input type="number" placeholder="Mother's Education" name="Medu" required>
+
+            <label for="higher">Aspire for Higher Education:</label>
+            <select name="higher" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="failures">Number of Failures:</label>
+            <input type="number" name="failures" placeholder="No of Failures" required>
+
+            <label for="G1">Grade G1:</label>
+            <input type="number"placeholder="Grade G1" name="G1" required>
+
+            <label for="G2">Grade G2:</label>
+            <input type="number"placeholder="Grade G2" name="G2" required>
+
+            <button type="submit" class="predict-button">Predict</button>
+        </form>
+        {% if prediction %}
+        <p class="prediction-result">Predicted Target Value: {{ prediction }}</p>
+        {% endif %}
+    </div>
+    
+</body>
+
+</html>
