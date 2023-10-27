@@ -27,7 +27,7 @@ This would create a serialized version of our model into a file model.pkl
 
 Run app.py using below command to start Flask API
 
-python main.py
+python app.py
 
 By default, flask will run on port 5000.
 
